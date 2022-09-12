@@ -1,0 +1,29 @@
+//*********
+// *******
+//  *****
+//   ***
+//    *
+
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int i,j,k,rows;
+	cout<<"enter number of rows"<<endl;
+	cin>>rows;
+	for(i=4;i>=0;i--)
+	{
+		for (j=4;j>=i;j--)
+		{
+			cout<<" ";
+		}
+		for (k=2*i+1;k>0;k++)
+		{
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+}
