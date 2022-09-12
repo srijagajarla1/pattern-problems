@@ -8,15 +8,17 @@
 using namespace std;
 int main()
 {
-	int i,j,k,l;
-	for(i=1;i<=4;i++)
+	int i,j,k,l,rows;
+	cout<<"enter numbr of rows"<<endl;
+	cin>>rows;
+	for(i=1;i<=rows;i++)
 	{
 		for(j=1;j<=i;j++)
 		{
 			cout<<j;
 		}
 		
-		for(k=1;k<=8-(2*i);k++)
+		for(k=1;k<=(2*rows)-(2*i);k++)
 		{
 			cout<<" ";
 		}
