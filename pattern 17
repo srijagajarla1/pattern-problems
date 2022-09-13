@@ -1,0 +1,35 @@
+//    A
+//   ABA
+//  ABCBA
+// ABCDBCA
+//ABCDEDCBA
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int i,j,k,l,rows;
+	cout<<"enter numbr of rows"<<endl;
+	cin>>rows;
+	
+	for(i=1;i<=rows;i++)
+	{
+		char count='A';
+		for(j=rows;j>=i;j--)
+		{
+			
+			cout<<" ";
+		}
+		for(k=1;k<=i;k++)
+		{
+			cout<<count++;
+		}
+		count--;
+		for(l=1;l<i;l++)
+		{
+			cout<<--count;
+		}
+		cout<<endl;
+	}
+}
