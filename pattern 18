@@ -1,0 +1,25 @@
+//E
+//DE
+//CDE
+//BCDE
+//ABCDE
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int i,j,rows;
+	cout<<"enter numbr of rows"<<endl;
+	cin>>rows;
+	
+	for(i=rows;i>=1;i--)
+	{
+		for(j=i;j<=rows;j++)
+		{
+			cout<<((char)(j+64));
+		}
+		cout<<endl;
+	}
+}
