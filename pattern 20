@@ -1,0 +1,51 @@
+//*        *
+//**      **
+//***    ***
+//****  ****
+//**********
+//****  ****
+//***    ***
+//**      **
+//*        *
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int i,j,k,l,m,n,rows;
+	cout<<"enter numbr of rows"<<endl;
+	cin>>rows;
+	
+	for(i=1;i<=5;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			cout<<"*";
+		}
+		for(k=4;k>=i;k--)
+		{
+			cout<<"  ";
+		}
+		for(j=1;j<=i;j++)
+		{
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+	for(i=4;i>=1;i--)
+	{
+		for(j=i;j>=1;j--)
+		{
+			cout<<"*";
+		}
+		for(k=4;k>=i;k--)
+		{
+			cout<<"  ";
+		}
+		for(j=i;j>=1;j--)
+		{
+			cout<<"*";
+		}		
+		cout<<endl;
+	}
+}
